@@ -198,7 +198,11 @@ namespace MatrixHomeWork
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, world!");
+            Console.SetWindowSize(Matrix.Width, Matrix.Height);
+
+            var task = Task.Run(Matrix.Start);
+
+            Console.ReadKey();
         }
     }
 }
